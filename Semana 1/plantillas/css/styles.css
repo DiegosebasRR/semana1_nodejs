@@ -1,0 +1,334 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+
+main {
+  padding: 20px;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
+.nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 50px;
+  }
+  
+  .nosotros__texto {
+    flex-basis: 50%;
+    text-align: center;
+  }
+  
+  .nosotros__texto h2 {
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  .nosotros__texto p {
+    font-size: 1.2rem;
+    color: #777;
+    line-height: 1.5;
+  }
+  
+  .nosotros__imagen {
+    flex-basis: 40%;
+  }
+  
+  .nosotros__imagen img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nosotros__texto {
+      flex-basis: 100%;
+    }
+    
+    .nosotros__imagen {
+      flex-basis: 100%;
+      margin-top: 50px;
+    }
+  }
+
+  #servicios {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #servicios h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .servicios-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .servicio {
+    flex-basis: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .servicio img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .servicio h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .servicio p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+  }
+
+  .catalogo {
+    background-color: #f5f5f5;
+    padding: 50px;
+  }
+  
+  .catalogo h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .productos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .producto {
+    width: 30%;
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .producto img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .producto h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .producto p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .producto a {
+    display: block;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+  }
+  
+  .producto a:hover {
+    background-color: #3e8e41;
+  }
+
+  #contact {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .section-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .section-description {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #777;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: #4a90e2;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #4179bd;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
+
+  .btn {
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e53935;
+  }
+  
+  
+  .hero {
+    background-image: url('https://e0.pxfuel.com/wallpapers/580/589/desktop-wallpaper-blue-black-abstract-white-circles-numbers-fondo-de-pantalla-de-tecnologia-fondos-de-tecnologia-nes-en-technical.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 2rem);
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
